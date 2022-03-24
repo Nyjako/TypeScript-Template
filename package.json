@@ -1,0 +1,37 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "Template repository for typescript apps with eslint and jest testing",
+  "main": "dist/main.js",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint -c .eslintrc --ext .ts ./src",
+    "start": "npm run build && node ./dist/main.js",
+    "test": "jest",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nyjako/TypeScript-Template.git"
+  },
+  "keywords": [
+    "template",
+    "typescript"
+  ],
+  "author": "Kacper \"Nyjako\" Tucholski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nyjako/TypeScript-Template/issues"
+  },
+  "homepage": "https://github.com/Nyjako/TypeScript-Template#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  }
+}
